@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff6ee;
+  color: #3b1f16;
+}
+
+.hero {
+  min-height: 620px;
+  background:
+    linear-gradient(rgba(0,0,0,.52), rgba(0,0,0,.52)),
+    url("imagens/capa.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 45px 20px 35px;
+}
+
+.logo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0 12px 30px rgba(0,0,0,.45);
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 78px;
+  color: #fff8ef;
+  font-weight: 400;
+  margin: 0 0 8px;
+  text-shadow: 0 5px 16px rgba(0,0,0,.5);
+}
+
+.hero p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff8ef;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 22px;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  border-radius: 35px;
+  font-weight: bold;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.menu {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff1e6;
+  padding: 14px 8px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.menu a {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 14px;
+  background: white;
+  color: #9b4f35;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+main {
+  max-width: 950px;
+  margin: auto;
+  padding: 20px;
+}
+
+.secao {
+  margin: 35px 0;
+}
+
+.secao h2,
+.contato h2 {
+  font-size: 30px;
+  color: #8b4513;
+  margin-bottom: 20px;
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.card {
+    background: #fffaf5;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+
+    transition: all .35s ease;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 420px;
+}
+
+
+.foto-produto{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    display:block;
+
+    transition: .5s;
+}
+
+.card h3{
+    margin:18px 18px 8px;
+    font-size:22px;
+    color:#5a2c1c;
+}
+
+.card p{
+    margin:0 18px;
+    color:#777;
+    line-height:1.5;
+}
+
+.card strong{
+    margin:18px;
+    font-size:28px;
+    color:#C86B45;
+}
+
+
+.destaque {
+  background: #fff0e3;
+  padding: 22px;
+  border-radius: 28px;
+}
+
+.contato {
+  text-align: center;
+  background: #fffaf5;
+  padding: 35px 20px;
+  border-radius: 28px;
+  margin: 35px 0;
+  box-shadow: 0 6px 18px rgba(90,44,28,0.1);
+}
+
+.contato p {
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  background: #c86b45;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .hero {
+  min-height: 560px;
+}
+
+ h1 {
+  font-size: 52px;
+}
+
+  .logo {
+  width: 170px;
+  height: 170px;
+}
+
+  main {
+    padding: 14px;
+  }
+
+  .grid-produtos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .card {
+    padding: 16px;
+    min-height: 200px;
+  }
+
+ .foto-produto{
+    height:140px;
+}
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .hero p {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+  .card strong {
+    font-size: 18px;
+  }
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}.whatsapp-float{
+
+    position:fixed;
+
+    bottom:25px;
+
+    right:25px;
+
+    width:68px;
+
+    height:68px;
+
+    background:#25D366;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.30);
+
+    transition:.3s;
+
+    z-index:9999;
+
+}
+
+.whatsapp-float:hover{
+
+    transform:scale(1.12);
+
+    background:#1ebe5d;
+
+}
+
+.whatsapp-float img{
+
+    width:34px;
+
+    filter:invert(1);
+
+}
