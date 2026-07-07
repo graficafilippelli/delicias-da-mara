@@ -30,8 +30,8 @@ body {
 }
 
 .logo {
-  width: 220px;
-  height: 220px;
+  width: 240px;
+  height: 240px;
   object-fit: cover;
   border-radius: 50%;
   border: 8px solid #fff;
@@ -58,15 +58,26 @@ h1 {
   margin: 0 0 22px;
 }
 
-.btn-whatsapp {
-  display: inline-block;
-  background: #25d366;
-  color: white;
-  text-decoration: none;
-  padding: 15px 26px;
-  border-radius: 35px;
-  font-weight: bold;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+.btn-whatsapp{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    background: #25D366;
+    color: #fff;
+    text-decoration: none;
+
+    padding: 12px 22px;
+    border-radius: 30px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,.20);
+
+    transition: .3s;
+
+    animation: pulse 2.5s infinite;
 }
 
 .menu {
@@ -128,45 +139,42 @@ main {
 }
 
 .card {
-    background: #fffaf5;
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,.08);
-
-    transition: all .35s ease;
-
-    display: flex;
-    flex-direction: column;
-
-    min-height: 420px;
+  background: #fffaf5;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  transition: all .35s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 310px;
 }
 
 
-.foto-produto{
-    width:100%;
-    height:230px;
-    object-fit:cover;
-    display:block;
-
-    transition: .5s;
+.foto-produto {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  display: block;
+  transition: .5s;
 }
 
-.card h3{
-    margin:18px 18px 8px;
-    font-size:22px;
-    color:#5a2c1c;
+.card h3 {
+  margin: 12px 12px 6px;
+  font-size: 15px;
+  color: #5a2c1c;
 }
 
-.card p{
-    margin:0 18px;
-    color:#777;
-    line-height:1.5;
+.card p {
+  margin: 0 12px;
+  color: #777;
+  line-height: 1.4;
+  font-size: 13px;
 }
 
-.card strong{
-    margin:18px;
-    font-size:28px;
-    color:#C86B45;
+.card strong {
+  margin: 14px 12px;
+  font-size: 22px;
+  color: #C86B45;
 }
 
 
@@ -207,9 +215,9 @@ footer {
 }
 
   .logo {
-  width: 170px;
-  height: 170px;
-}
+    width: 200px;
+    height: 200px;
+  }
 
   main {
     padding: 14px;
@@ -221,25 +229,27 @@ footer {
   }
 
   .card {
-    padding: 16px;
-    min-height: 200px;
+    padding: 0;
+    min-height: 255px;
   }
 
- .foto-produto{
-    height:140px;
-}
+ .foto-produto {
+    height: 115px;
+  }
 
   .card h3 {
-    font-size: 16px;
+    font-size: 13px;
+    margin: 10px 10px 5px;
   }
 
-  .hero p {
-  font-size: 13px;
-  letter-spacing: 1px;
-}
+  .card p {
+    font-size: 11px;
+    margin: 0 10px;
+  }
 
   .card strong {
     font-size: 18px;
+    margin: 10px;
   }
 }
 
@@ -293,4 +303,13 @@ footer {
 
     filter:invert(1);
 
+}
+
+.btn-whatsapp:hover{
+    transform: scale(1.08);
+    background: #1ebe5d;
+}
+
+.btn-whatsapp i{
+    font-size: 24px;
 }
